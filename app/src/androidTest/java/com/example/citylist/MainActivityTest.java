@@ -85,9 +85,9 @@ public class MainActivityTest {
         onData(anything()).inAdapterView(withId(R.id.city_list)).atPosition(0).perform(click());
         onView(withId(R.id.second)).check(matches(isDisplayed()));
         onView(withId(R.id.textView)).check(matches(withText("Edmonton")));
-        //onView(withId(R.id.button)).perform(click());
-        //onView(withId(R.id.main)).check(matches(isDisplayed()));
-       // Espresso.pressBack();
+        onView(withId(R.id.button)).perform(click());
+        onView(withId(R.id.main)).check(matches(isDisplayed()));
+        Espresso.pressBack();
     }
 
 }
